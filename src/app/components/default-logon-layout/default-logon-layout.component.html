@@ -1,16 +1,23 @@
 <main>
-    <section>
-        <img src="/assets/png/ordaminilogo2.png" />
-        <h2></h2>
-        <button></button>
-        <div>
-            <span>ou</span>
+    <section class="form-section">
+        <img src="/assets/png/ordaminilogo3.png" />
+        <h2>{{ title }}</h2>
+        <ng-content></ng-content>
+        <div class="btn-wrapper">
+            <button class="btn-primary">{{ primaryBtnText }}</button>
+            <div class="divider">
+                <div class="div1"></div>
+                <span>ou</span>
+                <div class="div2"></div>
+                
+            </div>
+            <button class="btn-secondary">{{ secondaryBtnText }}</button>
         </div>
-        <button></button>
+        
     </section>
-    <section>
+    <section class="main-section">
         <h1>Bem vindo a O.R.D.A.</h1>
         <h3>Organização Reis de Antigamente</h3>
-        <img src="/assets/png/ordaback.png" />
+        <img src="/assets/jpg/ordamainlogo.jpg" />
     </section>
 </main>
