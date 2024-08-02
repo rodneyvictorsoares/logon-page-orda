@@ -1,0 +1,36 @@
+@import "../../../styles/variables.scss";
+
+.input-wrapper {
+    font-size: 16px;
+    text-align: start;
+
+    label {
+        color: $text-color;
+        margin-bottom: 10px;
+        font-family: fantasy;
+        letter-spacing: 2px;
+        font-weight: lighter;
+    }
+
+    .input-content {
+        width: 100%;
+        display: flex;
+        
+        .icon {
+            padding: 12px;
+            background-color: $grey-bg;
+            border-radius: 0 8px 8px 0;
+        }
+
+        input {
+            border: none;
+            border-radius: 8px 0 0 8px;
+            //background-color:
+            background-color: $text-color;
+            
+            padding: 12px 0 12px 20px;
+            width: 100%;
+        }
+    }
+    
+}

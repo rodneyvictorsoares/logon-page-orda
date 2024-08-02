@@ -1,5 +1,11 @@
 <app-default-logon-layout title="ACESSE A SUA CONTA" primaryBtnText="Acessar Agora" secondaryBtnText="Inscreva-se Agora">
     <form [formGroup]="loginForm">
-
+        <app-logon-input formControlName="email" inputName="email" type="email" label="Email" placeHolder="exemplo@gmail.com">
+            <img src="/assets/png/envelope.png" />
+        </app-logon-input>
+        <app-logon-input formControlName="password" inputName="password" type="password" label="Senha" >
+            <img src="/assets/png/trancar.png" />
+        </app-logon-input>
+        <span>Esqueceu a Senha?</span>
     </form>
 </app-default-logon-layout>

@@ -19,19 +19,29 @@ main {
         gap: 8px;
         flex-grow: 1;
         background-color: $grey-bg;
+
+        h1, h5 {
+            font-family: fantasy;
+            color: $text-color;
+            letter-spacing: 2px;
+            font-weight: lighter;
+        }
     }
 
     .form-section {
         flex-grow: 0.3;
         padding: 0 35px;
         //gap: 34px;
+        background-color: $primary-color;
 
         h2 {
             font-size: 20px;
-            font-weight: bold;
+            //font-weight: bold;
             font-family: fantasy;
             color: $text-color;
             margin-bottom: 45px;
+            letter-spacing: 2px;
+            font-weight: lighter;
         }
 
         img {
@@ -66,25 +76,35 @@ main {
                 //min-width: 100%;
                 background-color: $grey-bg;
             }
+
+            span {
+                font-family: fantasy;
+                font-weight: lighter;
+                letter-spacing: 2px;
+            }
+
             button {
                 width: 100%;
                 border-radius: 8px;
                 font-size: 16px;
                 font-weight: 500;
+                font-family: fantasy;
+                font-weight: lighter;
+                letter-spacing: 2px;
                 border: none;
                 background-color: transparent;
                 padding: 12px 24px;
                 cursor: pointer;
     
                 &.btn-primary {
-                    background-color: $primary-color;
+                    background-color: $grey-bg;
                     color: $text-color;
                     box-shadow: 8px 8px 12px rgba($color: #ffffff, $alpha: 0.6);
                 }
     
                 &.btn-secondary {
-                    border: 1px solid $primary-color;
-                    color: $primary-color;
+                    border: 1px solid $text-color;
+                    color: $text-color;
                 }
             }
         }
