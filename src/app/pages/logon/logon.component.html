@@ -1,4 +1,4 @@
-<app-default-logon-layout title="ACESSE A SUA CONTA" primaryBtnText="Acessar Agora" secondaryBtnText="Inscreva-se Agora">
+<app-default-logon-layout title="ACESSE A SUA CONTA" primaryBtnText="Acessar Agora" secondaryBtnText="Inscreva-se Agora" (submit)="submit()" (navigate)="navigate()" [disablePrimaryBtn]="!loginForm.valid">
     <form [formGroup]="loginForm">
         <app-logon-input formControlName="email" inputName="email" type="email" label="Email" placeHolder="exemplo@gmail.com">
             <img src="/assets/png/envelope.png" />
