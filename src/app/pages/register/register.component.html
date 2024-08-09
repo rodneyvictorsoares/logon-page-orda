@@ -1,0 +1,17 @@
+<app-default-logon-layout title="FAÇA AQUI O SEU REGISTRO" primaryBtnText="Inscreva-se Agora" secondaryBtnText="Acessar Agora" (submit)="submit()" (navigate)="navigate()" [disablePrimaryBtn]="!registerForm.valid">
+    <form [formGroup]="registerForm">
+        <app-logon-input formControlName="name" inputName="name" type="text" label="Nome" placeHolder="Isaac Asimov">
+            <img src="/assets/png/envelope.png" />
+        </app-logon-input>
+        <app-logon-input formControlName="email" inputName="email" type="email" label="Email" placeHolder="exemplo@gmail.com">
+            <img src="/assets/png/envelope.png" />
+        </app-logon-input>
+        <app-logon-input formControlName="password" inputName="password" type="password" label="Senha" >
+            <img src="/assets/png/trancar.png" />
+        </app-logon-input>
+        <app-logon-input formControlName="confirmPassword" inputName="confirmPassword" type="password" label="Confirme a Senha" >
+            <img src="/assets/png/trancar.png" />
+        </app-logon-input>
+        <span>Esqueceu a Senha?</span>
+    </form>
+</app-default-logon-layout>
